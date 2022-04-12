@@ -7,4 +7,19 @@ body {
 }
 
 /* ---------------------------------------------------- */
+.kalendar {display: grid;
+	list-style: none;
+grid-template-columns:repeat(7,50px) ;
+grid-template-rows: 50px 50px 50px 50px 50px 50px;
+gap: 3px;}
 
+.kalendar li {border: 1px solid grey;
+	line-height: 48px;
+	text-align: center}
+.zahlavi {background-color: orange;
+color: white;
+line-height: 48px;
+text-align: center;}
+
+.predchozi,
+.nasledujici {background-color: silver;}
