@@ -20,6 +20,10 @@ html { box-sizing: border-box;}
 /* ---------------------------------------------------- */
 
 /* Nastyluj jednotlivé bloky podle zadání na obrázku */
+.kontejner {display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 100px auto auto auto 250px 100px;
+	gap: 20px;}
 
 .logo {
 	background-color: #55efc4;
@@ -27,7 +31,8 @@ html { box-sizing: border-box;}
 
 .hlavicka {
 	background-color: #74b9ff;
-}
+
+grid-column: 2/span 2;}
 
 .menu {
 	background-color: #ff7675;
@@ -35,10 +40,14 @@ html { box-sizing: border-box;}
 
 .clanek1 {
 	background-color: #fdcb6e;
+	grid-column: 2/ span 2;
+	grid-row: 2/ span 2;
 }
 
 .clanek2 {
 	background-color: #a29bfe;
+	grid-column: 1/ span 2;
+	grid-row: 4/ span 2;
 }
 
 .reklama1 {
@@ -47,6 +56,8 @@ html { box-sizing: border-box;}
 
 .reklama2 {
 	background-color: #00b894;
+	grid-column: 3;
+	grid-row: 4/ span 2
 }
 
 .foto1 {
@@ -63,6 +74,12 @@ html { box-sizing: border-box;}
 
 .paticka {
 	background-color: #636e72;
+	grid-column: span 3;
+	height: 100px;
 }
 
 
+.kontejner {display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 100px auto auto auto 250px 100px;
+gap: 20px;}
