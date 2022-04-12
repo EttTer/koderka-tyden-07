@@ -8,10 +8,18 @@
     min-height: 100px;
 }
 
-.prvni { background-color: #2ecc71;}
-.druhy { background-color: #f1c40f;}
-.treti { background-color: #3498db;}
-.ctvrty { background-color: #e74c3c;}
+.prvni { background-color: #2ecc71;
+grid-column: 3;
+grid-row: 1;}
+.druhy { background-color: #f1c40f;
+grid-column: 1;
+grid-row: 1;}
+.treti { background-color: #3498db;
+grid-column: 4;
+grid-row: 1;}
+.ctvrty { background-color: #e74c3c;
+grid-column: 2;
+grid-row: 1;}
 
 .kontejner {
     padding: 10px;
@@ -21,3 +29,5 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
+.kontejner {display: grid;
+grid-template-columns: repeat(4, 1fr);}
